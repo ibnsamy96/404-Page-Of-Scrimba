@@ -95,6 +95,7 @@
     -o-transform: scale(1) skew(0deg, -4deg);
     -ms-transform: scale(1) skew(0deg, -4deg);
     transform: scale(1) skew(0deg, -4deg);
+    position: relative;
 }
 
 .course-card-container:hover .course-info {
