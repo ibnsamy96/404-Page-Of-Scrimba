@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #2b2839 !important;
+    font-family: 'Signika', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    vertical-align: baseline;
+    font-size: 20px;
+    color: #000 !important;
+}
+
+.btn {
+    border-radius: 20px !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    color: #fff !important;
+    background-color: #30a761;
+    border-color: #30a761;
+    transition: none 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+
+.btn-primary:hover {
+    --t_x: 0;
+    --t_y: 0;
+    --t_z: 0;
+    --t_rotate: 0;
+    --t_scale: 1;
+    --t_scale-x: 1;
+    --t_scale-y: 1;
+    --t_skew-x: 0;
+    --t_skew-y: 0;
+    transform: translate3d(var(--t_x), var(--t_y), var(--t_z)) rotate(var(--t_rotate)) skewX(var(--t_skew-x)) skewY(var(--t_skew-y)) scaleX(var(--t_scale-x)) scaleY(var(--t_scale-y)) scale(var(--t_scale));
+    --t_scale: 1.05 !important;
+    --t_rotate: 1deg !important;
+}
+
+
+.nav-link {
+    font-weight: 600;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.nav-link:first-of-type {
+    height: fit-content;
+}
+
+.nav-items span {
+    color: #b8bfca !important;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.course-instructor-image {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    max-width: 18%;
+    border-radius: 50%;
+}
+
+.course-card {
+    border-radius: 8px;
+    padding-top: 7px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.course-info {
+    background-color: #fff;
+    border-radius: 5% 5% 8px 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: margin 0.1s;
+}
+
+.course-card-container {
+    cursor: pointer;
+}
+
+.cover-text {
+    -moz-transform: scale(1) skew(0deg, -4deg);
+    -webkit-transform: scale(1) skew(0deg, -4deg);
+    -o-transform: scale(1) skew(0deg, -4deg);
+    -ms-transform: scale(1) skew(0deg, -4deg);
+    transform: scale(1) skew(0deg, -4deg);
+}
+
+.course-card-container:hover .course-info {
+    margin-top: -10px;
+}
+
+.course-svg-shape {
+    transition: margin 0.2s;
+    transition: transform 0.3s;
+}
+
+.course-level-badge {
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
+}
+
+.course-card[data-course-title="instagram clone"] {
+    background-color: #dae6ff !important;
+}
+
+.course-card:hover .course-svg-shape {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.course-card[data-course-title="instagram clone"]:hover .course-svg-shape {
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+.course-card[data-course-title="html css"] {
+    background-color: #f1ded0 !important;
+}
+
+.course-card[data-course-title="html css"]:hover .course-svg-shape {
+    margin-top: -2px;
+    margin-left: 2px;
+}
+
+.course-card[data-course-title="weekly challenge"] {
+    background-color: #fffbd6 !important;
+}
+
+.course-card[data-course-title="weekly challenge"]:hover .course-svg-shape {
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+.course-card[data-course-title="ui bootcamp"] {
+    background-color: #dae6ff !important;
+}
+
+.course-card[data-course-title="ui bootcamp"]:hover .course-svg-shape {
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+.course-title h3 {
+    color: #415b7c !important;
+    text-shadow: 0 2px 0 #fff;
+}
+
+
+
+.course-info>*:not(img) {
+    max-width: 65%;
+}
+
+@media (max-width: 1150px) {
+    .nav-link:last-of-type {
+        display: none;
+    }
+
+    .nav-items span:last-of-type {
+        display: none !important;
+    }
+}
+
+@media (max-width: 988px) {
+    .nav-link:first-child {
+        display: none;
+    }
+}
